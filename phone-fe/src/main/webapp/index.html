@@ -4,25 +4,14 @@
         <title>Hello jQuery</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="js/hello.js"></script>
-        <script>
-			function myFunction() {
-			  document.getElementById("demo").innerHTML = "Hello World";
-			}
-		</script>
-         
     </head>
-
     <body>
-        <div>
-            <p class="greeting-id">The ID is ok2 </p>
-            <p class="greeting-content">The content is </p>
-        </div>
-		<div id="div1"><h2>Let jQuery AJAX Change This Text</h2></div>
-		<button>Get External Content</button>
-		
-		 Name: <input type="text" name="pname"><br>
-         Phone Number: <input type="text" name="pnumber"><br>
-		<button onclick="myFunction()">Click me</button>
-  
+         Name: <input type="text" name="pname" id="pname">
+         Phone Number: <input type="text" name="pnumber" id="pnumber"><br>
+		<button onclick="addFunction()">Add</button><br>
+		<input type="text" name="psearch" id="psearch"><br>
+		<button onclick="viewFunction()">Search</button>
+		<p id="display-resources"></p>
     </body>
 </html>
+
