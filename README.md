@@ -33,13 +33,13 @@ phone-fe: Is the front end spring boot web application, makes call to phone-be a
 
 ## Use full URL
 * Database URL
-* localhost:8080/h2-console
+     localhost:8080/h2-console
 
 * phone-be (Phone Back End API)
-* localhost:8080/swagger-ui.html#/
+     localhost:8080/swagger-ui.html#/
 
-* phone-fe (Phone Fron End)
-* http://localhost:9001/index.html
+* phone-fe (Phone Fron End Web application)
+     http://localhost:9001/index.html
 
 ## How do I get set up?
 
