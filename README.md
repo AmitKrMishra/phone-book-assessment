@@ -32,13 +32,13 @@ phone-be: Is the backend API used to perform insert and list operation to in inb
 phone-fe: Is the front end spring boot web application, makes call to phone-be api to perform the crud operation.
 
 ## Use full URL
-* Database URL
-     localhost:8080/h2-console
+* Database URL <br/>
+     http://localhost:8080/h2-console
 
-* phone-be (Phone Back End API)
-     localhost:8080/swagger-ui.html#/
+* phone-be (Phone Back End API) <br/>
+     http://localhost:8080/swagger-ui.html#/     
 
-* phone-fe (Phone Fron End Web application)
+* phone-fe (Phone Fron End Web application) <br/>
      http://localhost:9001/index.html
 
 ## How do I get set up?
