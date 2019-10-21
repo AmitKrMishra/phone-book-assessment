@@ -48,24 +48,6 @@ public class PhoneBookServiceImpl extends AbstractPhoneDBClientConnection implem
 	@Override
 	public String addPhoneBookInfo(PhoneBookRequest phoneBookRequest) {
 		logger.debug("Inside addPhoneBookInfo");
-
-/*		Function<List<PhoneBookInfo>, List<PhoneBookInfo>> chkPhoneBook = list -> {
-			List<PhoneBookInfo> phoneBookInfoList = new ArrayList<>();
-			for (PhoneBookInfo phoneBookInfo : list) {
-				
-			}
-			for (PhoneBookInfo phoneBookInfo : list) {
-				if (phoneBookInfo.getPhone() != null) {
-					phoneBookInfoList.add(phoneBookInfo);
-				}
-			}
-			return phoneBookInfoList;
-		};
-		PhoneBookInfo phoneBookInfo= getPhoneBookInfo(phoneBookRequest);
-*/
-//		List<PhoneBook> filteredArchiveInfoList = chkPhoneBook.apply(phoneBookInfo.getPhone());
-//		elkArchiveResponse.setArchiveInfo(filteredArchiveInfoList);
-		
 		phoneBookRepository.save(phoneBookRequest.getPhoneInfo());
 		return PhoneBookConstants.SUCCESS;
 	}
